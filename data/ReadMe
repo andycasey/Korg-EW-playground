@@ -1,0 +1,192 @@
+J/ApJ/865/68    Abundances for 79 Sun-like stars within 100pc    (Bedell+, 2018)
+================================================================================
+The chemical homogeneity of Sun-like stars in the solar neighborhood.
+    Bedell M., Bean J.L., Melendez J., Spina L., Ramirez I., Asplund M.,
+    Alves-Brito A., dos Santos L., Dreizler S., Yong D., Monroe T.,
+    Casagrande L.
+   <Astrophys. J., 865, 68 (2018)>
+   =2018ApJ...865...68B
+================================================================================
+ADC_Keywords: Abundances; Equivalent widths; Stars, G-type; Spectra, optical
+Keywords: planets and satellites: general; stars: abundances; stars: solar-type;
+          Sun: abundances; techniques: spectroscopic
+
+Abstract:
+    The compositions of stars are a critical diagnostic tool for many
+    topics in astronomy such as the evolution of our Galaxy, the formation
+    of planets, and the uniqueness of the Sun. Previous spectroscopic
+    measurements indicate a large intrinsic variation in the elemental
+    abundance patterns of stars with similar overall metal content.
+    However, systematic errors arising from inaccuracies in stellar models
+    are known to be a limiting factor in such studies, and thus it is
+    uncertain to what extent the observed diversity of stellar abundance
+    patterns is real. Here we report the abundances of 30 elements with
+    precisions of 2% for 79 Sun-like stars within 100pc. Systematic errors
+    are minimized in this study by focusing on solar twin stars and
+    performing a line-by-line differential analysis using high-resolution,
+    high-signal-to-noise spectra. We resolve [X/Fe] abundance trends in
+    galactic chemical evolution at precisions of 10^-3^dex/Gyr and reveal
+    that stars with similar ages and metallicities have nearly identical
+    abundance patterns. Contrary to previous results, we find that the
+    ratios of carbon-to-oxygen and magnesium-to-silicon in
+    solar-metallicity stars are homogeneous to within 10% throughout the
+    solar neighborhood, implying that exoplanets may exhibit much less
+    compositional diversity than previously thought. Finally, we
+    demonstrate that the Sun has a subtle deficiency in refractory
+    material relative to >80% of solar twins (at 2{sigma} confidence),
+    suggesting a possible signpost for planetary systems like our own.
+
+Description:
+    To achieve sufficient signal-to-noise for high-precision abundance
+    work, we stacked >=50 observations for each star. All spectra were
+    taken with the High Accuracy Radial velocity Planet Searcher (HARPS)
+    spectrograph on the 3.6m telescope of the European Southern
+    Observatory (ESO), located at La Silla Observatory in Chile; with
+    resolving power R=115000 and wavelength coverage between 378-691nm.
+    A majority of the selected sample were observed by us in the course of
+    a large ESO observing program on HARPS (Melendez+ 2015Msngr.161...28M).
+    Other stars had a sufficient number of publicly available spectra in
+    the online ESO Science Archive Facility.
+
+    The solar reference spectrum used in this work was created by
+    combining multiple exposures of sunlight reflected from the asteroid
+    Vesta. It was continuum-normalized in the same manner as the target
+    spectra and has S/N~1300/pix at 600nm.
+
+    Spectra previously obtained with the MIKE spectrograph and analyzed in
+    Ramirez+ (2014A&A...572A..48R) were also used in some parts of this
+    analysis. These spectra have S/N~400/pix at 600nm, resolution
+    R=83000-65000 (on blue/red CCDs), and wavelength coverage between 320
+    and 1000nm.
+
+File Summary:
+--------------------------------------------------------------------------------
+ FileName    Lrecl  Records  Explanations
+--------------------------------------------------------------------------------
+ReadMe          80        .  This file
+ews.dat         50    47680  Equivalent width measurements
+table2.dat     282       79  Abundances
+--------------------------------------------------------------------------------
+
+See also:
+ I/259 : The Tycho-2 Catalogue (Hog+ 2000)
+ J/ApJ/622/1102 : The planet-metallicity correlation. (Fischer+, 2005)
+ J/ApJS/159/141 : Spectroscopic properties of cool stars. I. (Valenti+, 2005)
+ J/A+A/508/L17  : Abundances in solar analogs (Ramirez+, 2009)
+ J/ApJ/715/1050 : Predicted abundances for extrasolar planets. I. (Bond+, 2010)
+ J/ApJ/725/2349 : C/O vs Mg/Si of planetary systems (Delgado Mena+, 2010)
+ J/A+A/523/A15  : HARPS XXIII: RV data for the 8 targets (Naef+, 2010)
+ J/A+A/530/A138 : Geneva-Copenhagen survey re-analysis (Casagrande+, 2011)
+ J/ApJ/735/41   : Carbon and oxygen abundances in FGK stars (Petigura+, 2011)
+ J/ApJ/732/55   : Abundances of stars with planets (Schuler+, 2011)
+ J/A+A/545/A32  : Chemical abundances of 1111 FGK stars (Adibekyan+, 2012)
+ J/A+A/552/A6   : F-G main-sequence star abundances (Gonzalez Hernandez+, 2013)
+ J/ApJ/764/78   : Oxygen abundances in nearby FGK stars (Ramirez+, 2013)
+ J/ApJ/795/23   : Line list for stellar chemical abundances (Bedell+, 2014)
+ J/A+A/562/A71  : Abundances of solar neighbourhood dwarfs (Bensby+, 2014)
+ J/A+A/583/A94  : [X/Fe] scatter derived for spectral lines (Adibekyan+, 2015)
+ J/A+A/591/A34  : Chemical abundances of zeta Reticuly (Adibekyan+, 2016)
+ J/ApJ/831/20   : C/O and Mg/Si for solar neighborhood's stars (Brewer+, 2016)
+ J/ApJ/819/19   : Equivalent widths of WASP-94A and WASP-94B (Teske+, 2016)
+ J/A+A/605/A89  : Microlensed Bulge dwarf star abundances. VI. (Bensby+, 2017)
+ J/MNRAS/474/2580 : Evolution of neutron-capture elements (Spina+, 2018)
+ J/A+A/614/A84  : C/O vs Mg/Si ratios in solar type stars (Suarez-Andres+, 2018)
+
+Byte-by-byte Description of file: ews.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units    Label     Explanations
+--------------------------------------------------------------------------------
+   1-  9 A9     ---      Name      HIP number or "Sun"
+      11 A1     ---    n_lambda    Note on lambda (1)
+  12- 19 F8.3   0.1nm    lambda    [4082.9/7775.4] Rest wavelength of line
+                                    in Angstroms
+  21- 21 A1     ---    f_lambda    Source flag (2)
+  23- 27 F5.1   ---      Ion       [6/106] Species identifier (3)
+  29- 34 F6.4   eV       EP        [0/9.2] Excitation potential
+  36- 42 F7.4   [-]      log(gf)   [-5.8/0.6] Log of the oscillator strength
+  44- 50 F7.3   10-13m   EW        [5/130]?=0 Measured equivalent width
+--------------------------------------------------------------------------------
+Note (1): 
+    - = hyperfine structure components used by the MOOG blends driver.
+Note (2): Most lines were measured from HARPS spectra except:
+    M = the line was measured from MIKE spectra instead.
+Note (3): Species identifier is the atomic number(s) followed by a decimal
+    point and a single digit indicating ionization state (from MOOG;
+    Sneden 1973PhDT.......180S).
+--------------------------------------------------------------------------------
+
+Byte-by-byte Description of file: table2.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units   Label     Explanations
+--------------------------------------------------------------------------------
+   1-  9 A9     ---     Name      HIP number
+  11- 16 F6.3   [-]     [CI/H]    [-0.17/0.18] Differential abundance of species
+                                   CI relative to Solar
+  18- 22 F5.3   [-]   e_[CI/H]    [0.003/0.06] Estimated uncertainty in [CI/H]
+  24- 29 F6.3   [-]     [CH/H]    [-0.2/0.1] Differential abundance of species
+                                   CH relative to Solar
+  31- 35 F5.3   [-]   e_[CH/H]    [0.003/0.03] Estimated uncertainty in [CH/H]
+  37- 42 F6.3   [-]     [OI/H]    [-0.11/0.2]? Differential abundance of species
+                                   OI relative to Solar
+  44- 48 F5.3   [-]   e_[OI/H]    [0.003/0.03]? Estimated uncertainty in [OI/H]
+  50- 55 F6.3   [-]     [NaI/H]   [-0.16/0.13] Differential abundance of species
+                                   NaI relative to Solar
+  57- 61 F5.3   [-]   e_[NaI/H]   [0.003/0.03] Estimated uncertainty in [NaI/H]
+  63- 68 F6.3   [-]     [MgI/H]   [-0.11/0.21] Differential abundance of species
+                                   MgI relative to Solar
+  70- 74 F5.3   [-]   e_[MgI/H]   [0.003/0.03] Estimated uncertainty in [MgI/H]
+  76- 81 F6.3   [-]     [AlI/H]   [-0.13/0.23] Differential abundance of species
+                                   AlI relative to Solar
+  83- 87 F5.3   [-]   e_[AlI/H]   [0.001/0.03] Estimated uncertainty in [AlI/H]
+  89- 94 F6.3   [-]     [SiI/H]   [-0.12/0.13] Differential abundance of species
+                                   SiI relative to Solar
+  96-100 F5.3   [-]   e_[SiI/H]   [0.002/0.006] Estimated uncertainty in [SiI/H]
+ 102-107 F6.3   [-]     [SI/H]    [-0.15/0.18] Differential abundance of species
+                                   SI relative to Solar
+ 109-113 F5.3   [-]   e_[SI/H]    [0.003/0.05] Estimated uncertainty in [SI/H]
+ 115-120 F6.3   [-]     [CaI/H]   [-0.11/0.15] Differential abundance of species
+                                   CaI relative to Solar
+ 122-126 F5.3   [-]   e_[CaI/H]   [0.003/0.02] Estimated uncertainty in [CaI/H]
+ 128-133 F6.3   [-]     [ScI/H]   [-0.13/0.14] Differential abundance of species
+                                   ScI relative to Solar
+ 135-139 F5.3   [-]   e_[ScI/H]   [0.004/0.03] Estimated uncertainty in [ScI/H]
+ 141-146 F6.3   [-]     [ScII/H]  [-0.13/0.2] Differential abundance of species
+                                   ScII relative to Solar
+ 148-152 F5.3   [-]   e_[ScII/H]  [0.005/0.03] Estimated uncertainty in [ScII/H]
+ 154-159 F6.3   [-]     [TiI/H]   [-0.11/0.17] Differential abundance of species
+                                   TiI relative to Solar
+ 161-165 F5.3   [-]   e_[TiI/H]   [0.003/0.02] Estimated uncertainty in [TiI/H]
+ 167-172 F6.3   [-]     [TiII/H]  [-0.12/0.17] Differential abundance of species
+                                   TiII relative to Solar
+ 174-178 F5.3   [-]   e_[TiII/H]  [0.004/0.02] Estimated uncertainty in [TiII/H]
+ 180-185 F6.3   [-]     [VI/H]    [-0.13/0.14] Differential abundance of species
+                                   VI relative to Solar
+ 187-191 F5.3   [-]   e_[VI/H]    [0.003/0.02] Estimated uncertainty in [VI/H]
+ 193-198 F6.3   [-]     [CrI/H]   [-0.16/0.15] Differential abundance of species
+                                   CrI relative to Solar
+ 200-204 F5.3   [-]   e_[CrI/H]   [0.003/0.02] Estimated uncertainty in [CrI/H]
+ 206-211 F6.3   [-]     [CrII/H]  [-0.15/0.14] Differential abundance of species
+                                   CrII relative to Solar
+ 213-217 F5.3   [-]   e_[CrII/H]  [0.004/0.02] Estimated uncertainty in [CrII/H]
+ 219-224 F6.3   [-]     [MnI/H]   [-0.24/0.13] Differential abundance of species
+                                   MnI relative to Solar
+ 226-230 F5.3   [-]   e_[MnI/H]   [0.003/0.02] Estimated uncertainty in [MnI/H]
+ 232-237 F6.3   [-]     [CoI/H]   [-0.13/0.13] Differential abundance of species
+                                   CoI relative to Solar
+ 239-243 F5.3   [-]   e_[CoI/H]   [0.003/0.02] Estimated uncertainty in [CoI/H]
+ 245-250 F6.3   [-]     [NiI/H]   [-0.15/0.14] Differential abundance of species
+                                   NiI relative to Solar
+ 252-256 F5.3   [-]   e_[NiI/H]   [0.002/0.01] Estimated uncertainty in [NiI/H]
+ 258-263 F6.3   [-]     [CuI/H]   [-0.17/0.18] Differential abundance of species
+                                   CuI relative to Solar
+ 265-269 F5.3   [-]   e_[CuI/H]   [0.002/0.06] Estimated uncertainty in [CuI/H]
+ 271-276 F6.3   [-]     [ZnI/H]   [-0.16/0.2] Differential abundance of species
+                                   ZnI relative to Solar
+ 278-282 F5.3   [-]   e_[ZnI/H]   [0.004/0.04] Estimated uncertainty in [ZnI/H]
+--------------------------------------------------------------------------------
+
+History:
+    From electronic version of the journal
+
+================================================================================
+(End)                     Prepared by [AAS], Emmanuelle Perret [CDS] 28-Aug-2019
